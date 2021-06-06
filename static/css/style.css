@@ -1,3 +1,6 @@
+ /* Fonts found from fonts.google.com
+ Importing and application found at https://developers.google.com/fonts/docs/getting_started */
+ 
  /* Importing custom font */
  @import url('https://fonts.googleapis.com/css?family=Staatliches');
  @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -9,7 +12,7 @@
     font-family: 'Staatliches';
 }
 
-/* Edit bodys */
+/* Edit body */
 body {
     font-family: 'Lato';
 }
