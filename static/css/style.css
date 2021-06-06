@@ -1,0 +1,15 @@
+ /* Importing custom font */
+ @import url('https://fonts.googleapis.com/css?family=Staatliches');
+ @import url('https://fonts.googleapis.com/css?family=Lato');
+
+ /* Edit jumbotron */
+.jumbotron  {
+    color: rgb(38, 40, 161);
+    border-style: solid; /* Found on https://stackoverflow.com/questions/23397921/jumbotron-borders-or-outline-not-working */
+    font-family: 'Staatliches';
+}
+
+/* Edit bodys */
+body {
+    font-family: 'Lato';
+}
