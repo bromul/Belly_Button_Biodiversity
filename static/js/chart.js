@@ -130,26 +130,17 @@ function buildCharts(sample) {
     Plotly.newPlot('bubble', bubbleData, bubbleLayout); 
 
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
-
-    // Create a variable that holds the first sample in the array.
-    // result
-
-    // 2. Create a variable that holds the first sample in the metadata array.
-    var metadata = data.metadata;
-    console.log(metadata);
-
-    // var metadataArray = metadata.filter(subject => subject.id === sample);
     var metadataArray = data.metadata.filter(subject => subject.id == sample);
     console.log(metadataArray);
+    
 
+    // 2. Create a variable that holds the first sample in the metadata array.
     var sampleMetadata = metadataArray[0];
 
-
     // 3. Create a variable that holds the washing frequency.
-
     var washFreq = parseFloat(sampleMetadata.wfreq);
        
-    
+  
     // 4. Create the trace for the gauge chart.
     var gaugeData = [{
       value: washFreq,

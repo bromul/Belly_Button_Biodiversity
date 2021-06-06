@@ -7,13 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <!-- Jumbotron image taken from https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/157/157973/bacteria.jpg?w=1155&h=1730 -->
+      <div class="col-md-12 jumbotron text-center", style="background-image: url(https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/157/157973/bacteria.jpg?w=1155&h=1730); background-size: 100%">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
@@ -33,7 +35,7 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+        <div id="bar" class="text-center"></div>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
@@ -49,6 +51,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/js/chart.js"></script>
+
 </body>
 
 </html>
