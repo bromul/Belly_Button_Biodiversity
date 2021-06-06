@@ -100,7 +100,7 @@ function buildCharts(sample) {
       title: 'Top 10 Bacteria Cultures Found',
       yaxis: { 
         type: 'category'
-      }
+       }
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
@@ -162,7 +162,10 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      
+      margin: {
+        t: 0,
+        b: 0
+      }
     };
 
     // 6. Use Plotly to plot the gauge data and layout.
